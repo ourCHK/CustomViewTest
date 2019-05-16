@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+    <objectAnimator
+        android:valueFrom="@color/colorAccent"
+        android:valueTo="#ff00ffff"
+        android:propertyName="backgroundColor"
+        android:duration="3000"
+        />
+    <objectAnimator
+        android:propertyName="translationX"
+        android:valueFrom="0"
+        android:valueTo="300"
+        android:duration="3000"
+        android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+        android:valueType="floatType"/>
+
+</set>

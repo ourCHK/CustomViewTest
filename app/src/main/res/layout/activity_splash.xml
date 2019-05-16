@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="1"
+            android:id="@+id/showButton1"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+        <Button
+            android:text="2"
+            android:id="@+id/showButton2"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+        <Button
+            android:text="3"
+            android:id="@+id/showButton3"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+        <Button
+            android:text="4"
+            android:id="@+id/showButton4"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+        <Button
+            android:text="5"
+            android:id="@+id/showButton5"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+        <Button
+            android:text="fix"
+            android:id="@+id/fixButton"
+            android:background="@drawable/circle_button_background"
+            style="@style/customButtonStyle"
+            />
+    </FrameLayout>
+
+</LinearLayout>
