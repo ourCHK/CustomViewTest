@@ -10,11 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".ValueAnimatorActivity"></activity>
-        <activity android:name=".AnimatorXMLActivity">
+        <activity android:name=".ValueAnimatorActivity" />
+        <activity android:name=".AnimatorXMLActivity"></activity>
+        <activity android:name=".SplashActivity">
 
         </activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".GroupLayoutAnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
