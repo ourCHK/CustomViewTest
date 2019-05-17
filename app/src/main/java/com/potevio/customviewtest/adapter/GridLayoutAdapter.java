@@ -1,10 +1,13 @@
 package com.potevio.customviewtest.adapter;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.potevio.customviewtest.R;
@@ -17,9 +20,11 @@ import java.util.List;
 public class GridLayoutAdapter extends RecyclerView.Adapter {
 
     List<String> mDataList;
+    Animation animation;
 
-    public GridLayoutAdapter(List<String> mDataList) {
+    public GridLayoutAdapter(Context context, List<String> mDataList) {
         this.mDataList = mDataList;
+        animation = AnimationUtils.loadAnimation(context,android.R.anim.slide_in_left);
     }
 
     @NonNull
@@ -32,7 +37,7 @@ public class GridLayoutAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-
+        viewHolder.itemView.startAnimation(animation);
     }
 
     @Override
